@@ -1,4 +1,4 @@
-public class staff {
+public class Staff {
     private int staffId;
     private String firstName;
     private String lastName;
@@ -6,7 +6,7 @@ public class staff {
     private String number;
     private String password;
 
-    public staff(int staffId, String firstName, String lastName, int addressId, String number, String password) {
+    public Staff(int staffId, String firstName, String lastName, int addressId, String number, String password) {
         this.staffId = staffId;
         this.firstName = firstName;
         this.lastName = lastName;

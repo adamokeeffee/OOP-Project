@@ -1,4 +1,4 @@
-public class patient {
+public class Patient {
     private int patientId;
     private String name;
     private int addressId;
@@ -6,7 +6,7 @@ public class patient {
     private String email;
 
     // Constructor
-    public patient(int patientId, String name, int addressId, String phone, String email) {
+    public Patient(int patientId, String name, int addressId, String phone, String email) {
         this.patientId = patientId;
         this.name = name;
         this.addressId = addressId;

@@ -1,4 +1,4 @@
-public class medical {
+public class Medical {
     private int medicalId;
     private int patientId;
     private int staffId;
@@ -9,7 +9,7 @@ public class medical {
     private String nextAppointment;
 
     // Constructor
-    public medical(int medicalId, int patientId, int staffId, String diagnosis, String symptoms, String treatment, String visitDate, String nextAppointment) {
+    public Medical(int medicalId, int patientId, int staffId, String diagnosis, String symptoms, String treatment, String visitDate, String nextAppointment) {
         this.medicalId = medicalId;
         this.patientId = patientId;
         this.staffId = staffId;

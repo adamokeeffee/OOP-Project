@@ -9,7 +9,7 @@ public class PatientDAO {
         this.connection = connection;
     }
 
-    // ✅ CREATE: Add a new patient
+    //  CREATE: Add a new patient
     public void addPatient(Patient patient) {
         String sql = "INSERT INTO Patient (patient_id, name, address_id, phone, email) VALUES (?, ?, ?, ?, ?)";
         try (PreparedStatement pstmt = connection.prepareStatement(sql)) {
@@ -25,7 +25,7 @@ public class PatientDAO {
         }
     }
 
-    // ✅ READ: Get all patients
+    // READ: Get all patients
     public List<Patient> getAllPatients() {
         List<Patient> patients = new ArrayList<>();
         String sql = "SELECT * FROM Patient";
@@ -46,7 +46,7 @@ public class PatientDAO {
         return patients;
     }
 
-    // ✅ READ: Get one patient by ID
+    //  READ: Get one patient by ID
     public Patient getPatientById(int patientId) {
         String sql = "SELECT * FROM Patient WHERE patient_id = ?";
         try (PreparedStatement pstmt = connection.prepareStatement(sql)) {
@@ -67,7 +67,7 @@ public class PatientDAO {
         return null;
     }
 
-    // ✅ UPDATE: Update patient info
+    // UPDATE: Update patient info
     public void updatePatient(Patient patient) {
         String sql = "UPDATE Patient SET name = ?, address_id = ?, phone = ?, email = ? WHERE patient_id = ?";
         try (PreparedStatement pstmt = connection.prepareStatement(sql)) {
@@ -83,7 +83,7 @@ public class PatientDAO {
         }
     }
 
-    // ✅ DELETE: Remove patient by ID
+    // DELETE: Remove patient by ID
     public void deletePatient(int patientId) {
         String sql = "DELETE FROM Patient WHERE patient_id = ?";
         try (PreparedStatement pstmt = connection.prepareStatement(sql)) {
